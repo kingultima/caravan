@@ -1,66 +1,82 @@
 /* ブラウザがそれぞれ持っているCSSをリセットするため */
 *{
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: #6c6b6b;
+}
+a{
+	text-decoration: none;/*文字修飾をなくす*/
 }
 /*clearfixを追加*/
 .clearfix::after{
-	content: "";
-	display: block;
-	clear: both;
+	content:"";
+	display:block;
+	clear:both;
 }
-.header {
-	width: 100%;/*横幅いっぱい*/
-	height: 120px;/*高さ120px*/
-	background-color: red;/* 背景色赤色*/
+header{
+	width:  90%;
+	padding: 15px 0;
+	margin: 0 auto;
+	text-align: center;
 }
-.header-top{
-	width: 100%;
-	height: 70px;
-	background-color: hotpink;
+/*headerタグ内のheadlineクラスにのみ反映される*/
+header .headline{
+	font-size: 32px;
 }
-.header-bottom{
-	width: 100%;
-	height: 50px;
-	background-color: pink;
+.nav-list{
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 auto;
 }
-
+.nav-list-item{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
 .main-visual{
 	width: 100%;
 	height: 300px;
-	background-color: orange;
+	background-image: url(img/mv.jpg);
+	background-size: cover;/* 縦横比を維持したまま背景の表示領域を覆うように表示*/
+	background-position: center;/*背景画像を中央に配置*/
 }
 .main-visual-content{
-	width: 350px;
+	width: 40%;
 	height: 300px;
-	background-color: gold;
+	background-color: rgba(0,0,0,0.5);/*背景を半透明の黒にする*/
+	text-align: center;
+	padding-top: 105px;/*上側の内側の余白で垂直方向の位置を調整*/
 }
-
+.main-visual-text{
+	color: #fff;/*文字色を白に変更*/
+}
+.main-visual-name{
+	margin-top: 30px;
+	color: #fff;
+}
 .main{
 	width: 840px;
-	/*overflow: hidden; を追加*/
-	/*overflow: hidden;*/
-	/*height: 1400px;*/
-	background-color: green;
-	/*中央寄せ　(余白が無いとできない)*/
 	margin: 0 auto;
 }
 .blog{
 	width: 600px;
 	height: 1400px;
-	background-color: limegreen;
 	float: left;
 }
 .sidebar{
 	width: 240px;
 	height: 1400px;
-	background-color: palegreen;
 	float: left;
 }
 
-.footer{
+footer{
 	width: 100%;
 	height: 120px;
-	background-color: blue;
+	text-align: center;
+	padding: 50px 0;
+	background-color: #848282;
+}
+.footer-text{
+	color: #fff;
 }
