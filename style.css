@@ -15,7 +15,7 @@ a{
 	clear:both;
 }
 header{
-	width:  90%;
+	width: 90%;
 	padding: 15px 0;
 	margin: 0 auto;
 	text-align: center;
@@ -44,7 +44,7 @@ header .headline{
 .main-visual-content{
 	width: 40%;
 	height: 300px;
-	background-color: rgba(0,0,0,0.5);/*背景を半透明の黒にする*/
+	background: rgba(0,0,0,0.5);/*背景を半透明の黒にする*/
 	text-align: center;
 	padding-top: 105px;/*上側の内側の余白で垂直方向の位置を調整*/
 }
@@ -55,18 +55,55 @@ header .headline{
 	margin-top: 30px;
 	color: #fff;
 }
-.main{
-	width: 840px;
-	margin: 0 auto;
+main{
+	width: 800px;
+	margin: 0 auto;/*箱の中央寄せ*/
+	padding: 70px 0;/*上下に70、左右に0pxの枠の内側の余白*/
 }
 .blog{
-	width: 600px;
-	height: 1400px;
+	width: 540px;
 	float: left;
+	margin-right: 30px;/*箱の右側の余白*/
+}
+.blog-headline{
+	border-bottom: 8px solid #f7f7f7;
+	text-align: center;
+	line-height: 0.6;/*親要素の行の高さの0.6倍にする*/
+}
+.blog-box{
+	/*50pxの余白をとる*/
+	padding-top: 50px; /*余白を作って距離を取りたい場合はpaddingを使う*/
+}
+.blog-item{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f7f7f7;
+}
+.blog-image{
+	float: left;
+	height: 180px;
+}
+.blog-text{
+	float: left;
+	padding: 30px 0 0 25px;
+}
+.blog-text-headline{
+	padding-bottom: 15px;
+}
+.blog-date{
+	font-size: 12px;
+	display: inline-block;/*blockよりinline-blockの方が良い*/
+}
+.category{
+	display: inline-block;
+	padding: 5px 8px;
+	background-color: #acabab;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 11px;
 }
 .sidebar{
-	width: 240px;
-	height: 1400px;
+	width: 230px;
 	float: left;
 }
 
